@@ -313,6 +313,7 @@ button {
   width: 100px;
   height: 120px;
   object-fit: cover;
+  object-position: center top;
   border-radius: 6px;
   display: block;
 }
@@ -425,3 +426,111 @@ button {
   font-size: 14px;
   background-color: #15120f;
 }
+
+/* Galeria */
+#cabecalho-galeria {
+  margin-top: 35px;
+  margin-bottom: 30px;
+}
+
+#titulo-galeria {
+  font-family: 'Anton', 'Impact', sans-serif;
+  font-size: 38px;
+  margin-bottom: 6px;
+  color: #f3efe4;
+}
+
+#subtitulo-galeria {
+  font-family: 'Figtree', sans-serif;
+  font-size: 16px;
+  color: #a9a395;
+}
+
+.secao-galeria {
+  margin-bottom: 45px;
+}
+
+.nome-galeria {
+  font-family: 'Anton', 'Impact', sans-serif;
+  font-size: 32px;
+  margin-bottom: 16px;
+  letter-spacing: 0.5px;
+}
+
+.nome-kane {
+  color: #2cb67d;
+}
+
+.nome-mbj {
+  color: #e9a53b;
+}
+
+.galeria-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 18px;
+}
+
+.card-foto {
+  position: relative;
+  height: 300px;
+  border-radius: 4px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  border: 3px solid transparent;
+  transition: transform 0.25s ease, filter 0.25s ease, border-color 0.25s ease, box-shadow 0.25s ease;
+}
+
+.card-foto img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center top;
+  display: block;
+}
+
+.card-foto.card-kane {
+  background-color: #1a4431;
+}
+
+.card-foto.card-mbj {
+  background-color: #3b2a0e;
+}
+
+.card-foto:hover {
+  transform: scale(1.04);
+  filter: brightness(1.2);
+  border-color: #ffffff;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.6);
+  z-index: 2;
+}
+
+.foto-nome {
+  font-family: 'Figtree', sans-serif;
+  font-weight: 700;
+  font-size: 15px;
+  color: #f3efe4;
+  text-align: center;
+  user-select: none;
+}
+
+.foto-hover-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 8px 0;
+  background-color: rgba(18, 18, 18, 0.85);
+  color: #f3efe4;
+  font-family: 'Anton', 'Impact', sans-serif;
+  font-size: 15px;
+  text-align: center;
+  letter-spacing: 0.5px;
+  opacity: 0;
+  transform: translateY(100%);
+  transition: opacity 0.25s ease, transform 0.25s ease;
+}
+
