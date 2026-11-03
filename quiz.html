@@ -1,27 +1,176 @@
+
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Harry Kane × Michael B. Jordan | Quiz</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Figtree:wght@400;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/estilo.css">
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Figtree:wght@400;600;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="css/quiz.css">
 </head>
+
 <body>
 
-  <main id="modal-em-andamento">
-    <div id="caixa-em-andamento">
-      <p id="titulo-em-andamento">Em Andamento</p>
-      <p id="texto-em-andamento">O Quiz está em desenvolvimento e será disponibilizado em breve.</p>
-      <div>
-        <a class="btn" href="home.html">Voltar para o Início</a>
+  <nav id="navbar">
+    <div id="navbar-container">
+      <div id="navbar-logo">
+        <p>KANE <b>×</b> JORDAN</p>
       </div>
+      <ul id="navbar-links">
+        <li><a href="home.html">Início</a></li>
+        <li><a href="perfis.html">Perfis</a></li>
+        <li><a href="galeria.html">Galeria</a></li>
+        <li><a href="timeline.html">Linha do Tempo</a></li>
+        <li><a href="catalogo.html">Catálogo</a></li>
+        <li><a href="quiz.html" class="ativo">Quiz</a></li>
+        <li><a href="player.html">Player</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main id="conteudo-principal">
+    <div id="container-padrao">
+
+      <h1 id="titulo-quiz">Quiz Interativo</h1>
+
+      <div id="caixa-quiz">
+
+        <div id="barra-progresso-fundo">
+          <div id="barra-progresso-preenchida"></div>
+        </div>
+
+        <p id="info-quiz">Pergunta 1 de 10 · Pontos: 0</p>
+
+        <div id="area-pergunta">
+
+          <div class="pergunta" data-indice="0">
+            <h2 class="texto-pergunta">Em que ano Harry Kane nasceu?</h2>
+            <div class="opcoes">
+              <button class="opcao" data-correta="false">1990</button>
+              <button class="opcao" data-correta="true">1993</button>
+              <button class="opcao" data-correta="false">1995</button>
+              <button class="opcao" data-correta="false">1991</button>
+            </div>
+          </div>
+
+          <div class="pergunta" data-indice="1">
+            <h2 class="texto-pergunta">Quantos gols Kane fez na Copa de 2018?</h2>
+            <div class="opcoes">
+              <button class="opcao" data-correta="false">4</button>
+              <button class="opcao" data-correta="false">5</button>
+              <button class="opcao" data-correta="true">6</button>
+              <button class="opcao" data-correta="false">8</button>
+            </div>
+          </div>
+
+          <div class="pergunta" data-indice="2">
+            <h2 class="texto-pergunta">Em qual clube Kane começou a carreira profissional?</h2>
+            <div class="opcoes">
+              <button class="opcao" data-correta="true">Tottenham</button>
+              <button class="opcao" data-correta="false">Arsenal</button>
+              <button class="opcao" data-correta="false">Chelsea</button>
+              <button class="opcao" data-correta="false">Leicester</button>
+            </div>
+          </div>
+
+          <div class="pergunta" data-indice="3">
+            <h2 class="texto-pergunta">Para qual clube Kane se transferiu em 2023?</h2>
+            <div class="opcoes">
+              <button class="opcao" data-correta="false">Real Madrid</button>
+              <button class="opcao" data-correta="true">Bayern de Munique</button>
+              <button class="opcao" data-correta="false">PSG</button>
+              <button class="opcao" data-correta="false">Manchester City</button>
+            </div>
+          </div>
+
+          <div class="pergunta" data-indice="4">
+            <h2 class="texto-pergunta">Kane é o maior artilheiro da história da seleção inglesa?</h2>
+            <div class="opcoes">
+              <button class="opcao" data-correta="true">Sim</button>
+              <button class="opcao" data-correta="false">Não</button>
+              <button class="opcao" data-correta="false">Empatado com Rooney</button>
+              <button class="opcao" data-correta="false">Terceiro colocado</button>
+            </div>
+          </div>
+
+          <div class="pergunta" data-indice="5">
+            <h2 class="texto-pergunta">Em qual filme Michael B. Jordan interpretou Adonis Creed?</h2>
+            <div class="opcoes">
+              <button class="opcao" data-correta="false">Rocky Balboa</button>
+              <button class="opcao" data-correta="true">Creed</button>
+              <button class="opcao" data-correta="false">Southpaw</button>
+              <button class="opcao" data-correta="false">Rocky IV</button>
+            </div>
+          </div>
+
+          <div class="pergunta" data-indice="6">
+            <h2 class="texto-pergunta">Qual vilão Michael B. Jordan interpretou em Pantera Negra?</h2>
+            <div class="opcoes">
+              <button class="opcao" data-correta="false">Ulysses Klaue</button>
+              <button class="opcao" data-correta="false">M'Baku</button>
+              <button class="opcao" data-correta="true">Erik Killmonger</button>
+              <button class="opcao" data-correta="false">Zemo</button>
+            </div>
+          </div>
+
+          <div class="pergunta" data-indice="7">
+            <h2 class="texto-pergunta">Em que cidade Michael B. Jordan nasceu?</h2>
+            <div class="opcoes">
+              <button class="opcao" data-correta="false">Los Angeles</button>
+              <button class="opcao" data-correta="false">Nova York</button>
+              <button class="opcao" data-correta="true">Santa Ana, Califórnia</button>
+              <button class="opcao" data-correta="false">Atlanta</button>
+            </div>
+          </div>
+
+          <div class="pergunta" data-indice="8">
+            <h2 class="texto-pergunta">Qual série da HBO revelou Michael B. Jordan como ator?</h2>
+            <div class="opcoes">
+              <button class="opcao" data-correta="true">The Wire</button>
+              <button class="opcao" data-correta="false">Breaking Bad</button>
+              <button class="opcao" data-correta="false">Game of Thrones</button>
+              <button class="opcao" data-correta="false">True Detective</button>
+            </div>
+          </div>
+
+          <div class="pergunta" data-indice="9">
+            <h2 class="texto-pergunta">Em Creed III, Michael B. Jordan também foi o diretor do filme?</h2>
+            <div class="opcoes">
+              <button class="opcao" data-correta="true">Sim</button>
+              <button class="opcao" data-correta="false">Não</button>
+              <button class="opcao" data-correta="false">Co-dirigiu apenas</button>
+              <button class="opcao" data-correta="false">Só produziu</button>
+            </div>
+          </div>
+
+        </div>
+
+        <p id="feedback-resposta"></p>
+
+        <button id="botao-proxima">Próxima</button>
+
+      </div>
+
+      <div id="tela-resultado" hidden>
+        <h2 id="titulo-resultado">Resultado Final</h2>
+        <p id="pontuacao-final"></p>
+        <p id="mensagem-resultado"></p>
+        <button id="botao-reiniciar" class="btn">Jogar Novamente</button>
+      </div>
+
     </div>
   </main>
 
+  <footer id="rodape">
+    <p>Atividade de dupla: Hyago e Gabriel</p>
+  </footer>
+
   <script src="js/dados.js"></script>
-  <script src="js/principal.js"></script>
+  <script src="js/quiz.js"></script>
 </body>
+
 </html>
