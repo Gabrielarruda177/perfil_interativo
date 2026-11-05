@@ -1,4 +1,4 @@
-/* universal*/
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -530,7 +530,7 @@ button {
   transition: opacity 0.25s ease, transform 0.25s ease;
 }
 
-/* Catálogo */
+
 .catalogo-banner {
   min-height: 340px;
   display: flex;
@@ -592,7 +592,6 @@ button {
   color: #f3efe4;
 }
 
-/* Catálogo — cards */
 .catalogo-conteudo {
   max-width: 1180px;
   margin: 0 auto;
@@ -688,8 +687,6 @@ button {
   font-size: .85rem;
   margin-top: .2rem;
 }
-
-/* Catálogo — tela catalogo.html: modal de detalhes */
 .catalogo-modal {
   position: fixed;
   inset: 0;
