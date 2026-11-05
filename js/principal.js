@@ -31,11 +31,11 @@ function carregarPerfis() {
 
   for (var i = 0; i < chaves.length; i++) {
     var p = PESSOAS[chaves[i]];
-    var fotoSrc = (p.id === "mbj") ? "file/img/michael/michael_proporcao_img2.jpg" : "file/img/kane/harry_kane.jpg";
+    var fotoSrc = (p.id === "mbj") ? "../file/img/michael/michael_proporcao_img2.jpg" : "../file/img/kane/harry_kane.jpg";
 
     html += '<div class="cartao" id="cartao-' + p.id + '">';
     html += '<div class="cartao-cabecalho">';
-    html += '<img class="cartao-foto" src="' + fotoSrc + '" alt="' + p.nome + '" onerror="this.src=\'file/img/michael/michael_proporcao_img2.jpg\';">';
+    html += '<img class="cartao-foto" src="' + fotoSrc + '" alt="' + p.nome + '" onerror="this.src=\'../file/img/michael/michael_proporcao_img2.jpg\';">';
     html += '<div><p class="cartao-nome">' + p.nome + '</p><p class="cartao-papel">' + p.papel + '</p></div>';
     html += '</div>';
 
@@ -98,8 +98,4 @@ function marcarLinkAtual() {
 window.onload = function() {
   marcarLinkAtual();
   carregarPerfis();
-  var creditos = document.getElementById("texto-creditos");
-  if (creditos && typeof NOMES_DA_DUPLA !== "undefined") {
-    creditos.textContent = "Atividade de dupla: " + NOMES_DA_DUPLA;
-  }
 };

@@ -3,11 +3,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Harry Kane × Michael B. Jordan | Perfis</title>
+  <title>Harry Kane × Michael B. Jordan | Linha do Tempo</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Anton&family=Figtree:wght@400;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/estilo.css">
+  <link rel="stylesheet" href="../css/estilo.css">
 </head>
 <body>
 
@@ -18,9 +18,9 @@
       </div>
       <ul id="navbar-links">
         <li><a href="home.html">Início</a></li>
-        <li><a href="perfis.html" class="ativo">Perfis</a></li>
+        <li><a href="perfis.html">Perfis</a></li>
         <li><a href="galeria.html">Galeria</a></li>
-        <li><a href="timeline.html">Linha do Tempo</a></li>
+        <li><a href="linhadotempo.html" class="ativo">Linha do Tempo</a></li>
         <li><a href="catalogo.html">Catálogo</a></li>
         <li><a href="quiz.html">Quiz</a></li>
         <li><a href="player.html">Player</a></li>
@@ -30,10 +30,18 @@
 
   <main id="conteudo-principal">
     <div id="container-padrao">
-      <p id="titulo-perfis">Perfis Interativos</p>
-      <p id="texto-perfis">Um atleta e um artista de destaque global, lado a lado. Alterne entre as abas e explore os blocos expansíveis de curiosidades e conquistas.</p>
+      <div id="cabecalho-linha-tempo">
+        <p id="titulo-linha-tempo">Linha do Tempo</p>
+        <div id="barra-controles-linha">
+          <div id="grupo-botoes-linha">
+            <button type="button" id="filtro-kane" class="botao-filtro ativo">Harry Kane</button>
+            <button type="button" id="filtro-jordan" class="botao-filtro">Michael B. Jordan</button>
+          </div>
+          <p id="instrucao-linha-tempo">Clique em um ano para ver os detalhes. Os eventos aparecem ao rolar.</p>
+        </div>
+      </div>
 
-      <div id="cards-perfis"></div>
+      <div id="trilho-tempo"></div>
     </div>
   </main>
 
@@ -43,7 +51,9 @@
     </div>
   </footer>
 
-  <script src="js/dados.js"></script>
-  <script src="js/principal.js"></script>
+  <script src="../js/dados.js"></script>
+  <script src="../js/principal.js"></script>
+  <script src="../js/linhadotempo.js"></script>
 </body>
 </html>
+

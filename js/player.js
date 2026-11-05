@@ -6,17 +6,17 @@ let itens = document.querySelectorAll(".item-video");
 let fotos = document.querySelectorAll(".foto-relacionada");
 
 let fotosKane = [
-    "file/img/kane/harry_kane.jpg",
-    "file/img/kane/kane_2.jpg",
-    "file/img/kane/kane3.jpg",
-    "file/img/kane/kane_ballon.jpg"
+    "../file/img/kane/harry_kane.jpg",
+    "../file/img/kane/kane_2.jpg",
+    "../file/img/kane/kane3.jpg",
+    "../file/img/kane/kane_ballon.jpg"
 ];
 
 let fotosJordan = [
-    "file/img/michael/michael2.jpg",
-    "file/img/michael/michael3.jpg",
-    "file/img/michael/michael4.jpg",
-    "file/img/michael/michael_oscar.jpg"
+    "../file/img/michael/michael2.jpg",
+    "../file/img/michael/michael3.jpg",
+    "../file/img/michael/michael4.jpg",
+    "../file/img/michael/michael_oscar.jpg"
 ];
 
 botaoPlay.addEventListener("click", function () {
@@ -57,4 +57,3 @@ itens.forEach(function (item) {
 
     });
 });
-
