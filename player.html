@@ -1,27 +1,127 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Harry Kane × Michael B. Jordan | Player</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Figtree:wght@400;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/estilo.css">
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Figtree:wght@400;600;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="css/player.css">
 </head>
+
 <body>
 
-  <main id="modal-em-andamento">
-    <div id="caixa-em-andamento">
-      <p id="titulo-em-andamento">Em Andamento</p>
-      <p id="texto-em-andamento">O Player Multimídia está em desenvolvimento e será disponibilizado em breve.</p>
-      <div>
-        <a class="btn" href="home.html">Voltar para o Início</a>
+  <nav id="navbar">
+    <div id="navbar-container">
+      <div id="navbar-logo">
+        <p>KANE <b>×</b> JORDAN</p>
       </div>
+      <ul id="navbar-links">
+        <li><a href="home.html">Início</a></li>
+        <li><a href="perfis.html">Perfis</a></li>
+        <li><a href="galeria.html">Galeria</a></li>
+        <li><a href="timeline.html">Linha do Tempo</a></li>
+        <li><a href="catalogo.html">Catálogo</a></li>
+        <li><a href="quiz.html">Quiz</a></li>
+        <li><a href="player.html" class="ativo">Player</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main id="conteudo-principal">
+    <div id="container-padrao">
+
+      <h1 id="titulo-pagina">Player Multimídia</h1>
+
+      <div id="area-player">
+
+        <div id="painel-video">
+
+          <video id="video-principal" src="file/video/melhoresKane.mp4"></video>
+
+          <div id="area-controles">
+            <button id="botao-play">Play</button>
+            <button id="botao-pause">Pause</button>
+            <p id="texto-tocando">Tocando: Melhores momentos de Harry Kane</p>
+          </div>
+
+          <div id="area-imagens">
+            <h2 id="titulo-imagens">Imagens relacionadas</h2>
+            <div id="grade-imagens">
+              <div class="caixa-foto">
+                <img class="foto-relacionada" src="file/img/kane/harry_kane.jpg" alt="Foto">
+              </div>
+              <div class="caixa-foto">
+                <img class="foto-relacionada" src="file/img/kane/kane_2.jpg" alt="Foto">
+              </div>
+              <div class="caixa-foto">
+                <img class="foto-relacionada" src="file/img/kane/kane3.jpg" alt="Foto">
+              </div>
+              <div class="caixa-foto">
+                <img class="foto-relacionada" src="file/img/kane/kane_ballon.jpg" alt="Foto">
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <div id="painel-playlist">
+
+          <h2 id="titulo-playlist">Playlist</h2>
+
+          <div id="lista-videos">
+
+            <div class="item-video ativo" data-video="file/video/melhoresKane.mp4" data-titulo="Melhores momentos de Harry Kane" data-heroi="kane">
+              <span class="ponto ponto-kane"></span>
+              <div class="info-item">
+                <p class="nome-video">Melhores momentos</p>
+                <p class="autor-video">Harry Kane</p>
+              </div>
+            </div>
+
+            <div class="item-video" data-video="file/video/entrevistaKane.mp4" data-titulo="Entrevista de Harry Kane" data-heroi="kane">
+              <span class="ponto ponto-kane"></span>
+              <div class="info-item">
+                <p class="nome-video">Entrevista</p>
+                <p class="autor-video">Harry Kane</p>
+              </div>
+            </div>
+
+            <div class="item-video" data-video="file/video/EntrevistaBjordam.mp4" data-titulo="Entrevista de Michael B. Jordan" data-heroi="jordan">
+              <span class="ponto ponto-jordan"></span>
+              <div class="info-item">
+                <p class="nome-video">Entrevista</p>
+                <p class="autor-video">Michael B. Jordan</p>
+              </div>
+            </div>
+
+            <div class="item-video" data-video="file/video/Cred2Trailler.mp4" data-titulo="Trailer: Creed de Michael B. Jordan" data-heroi="jordan">
+              <span class="ponto ponto-jordan"></span>
+              <div class="info-item">
+                <p class="nome-video">Trailer: Creed</p>
+                <p class="autor-video">Michael B. Jordan</p>
+              </div>
+            </div>
+
+          </div>
+
+          <p id="dica-playlist">Clique em um item para trocar o vídeo.</p>
+
+        </div>
+
+      </div>
+
     </div>
   </main>
 
-  <script src="js/dados.js"></script>
-  <script src="js/principal.js"></script>
+  <footer id="rodape">
+    <p>Atividade de dupla: Hyago e Gabriel</p>
+  </footer>
+
+  <script src="js/player.js"></script>
 </body>
+
 </html>
