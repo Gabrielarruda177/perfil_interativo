@@ -10,18 +10,80 @@
   <link rel="stylesheet" href="css/estilo.css">
 </head>
 <body>
-
-  <main id="modal-em-andamento">
-    <div id="caixa-em-andamento">
-      <p id="titulo-em-andamento">Em Andamento</p>
-      <p id="texto-em-andamento">O Catálogo está em desenvolvimento e será disponibilizado em breve.</p>
-      <div>
-        <a class="btn" href="home.html">Voltar para o Início</a>
+  <nav id="navbar" aria-label="Navegação principal">
+    <div id="navbar-container">
+      <div id="navbar-logo">
+        <p>KANE <b>×</b> JORDAN</p>
       </div>
+      <ul id="navbar-links">
+        <li><a href="home.html">Início</a></li>
+        <li><a href="perfis.html">Perfis</a></li>
+        <li><a href="galeria.html">Galeria</a></li>
+        <li><a href="timeline.html">Linha do Tempo</a></li>
+        <li><a href="catalogo.html" class="ativo" aria-current="page">Catálogo</a></li>
+        <li><a href="quiz.html">Quiz</a></li>
+        <li><a href="player.html">Player</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main id="conteudo-principal">
+    <section class="catalogo-banner" aria-labelledby="catalogo-titulo">
+      <div class="carrossel">
+        <div class="carrossel-item ativo">
+          <img src="file/img/kane/harry_kane.jpg" alt="Harry Kane comemorando um gol">
+        </div>
+
+        <div class="carrossel-item">
+          <img src="file/img/michael/michael3.jpg" alt="Michael B. Jordan em The Wire">
+        </div>
+      </div>
+
+      <div class="catalogo-banner-conteudo">
+        <p class="catalogo-selo">Kane × Jordan</p>
+        <p class="catalogo-titulo" id="catalogo-titulo">Em Destaque</p>
+        <p class="catalogo-descricao">
+          Do gramado às telas: momentos marcantes de Harry Kane e Michael B. Jordan.
+        </p>
+        <a class="catalogo-btn" href="player.html">Abrir player</a>
+      </div>
+    </section>
+
+    <div class="catalogo-conteudo">
+      <section class="catalogo-fileira kane" aria-labelledby="titulo-fileira-kane">
+        <p class="catalogo-fileira-titulo" id="titulo-fileira-kane" role="heading" aria-level="2">Harry Kane · Momentos marcantes</p>
+        <p class="catalogo-fileira-descricao">Gols, recordes e capítulos da carreira do capitão inglês.</p>
+        <div class="catalogo-trilho" id="trilho-kane" aria-label="Momentos de Harry Kane"></div>
+      </section>
+
+      <section class="catalogo-fileira mbj" aria-labelledby="titulo-fileira-mbj">
+        <p class="catalogo-fileira-titulo" id="titulo-fileira-mbj" role="heading" aria-level="2">Michael B. Jordan · Filmes e séries</p>
+        <p class="catalogo-fileira-descricao">Personagens e produções que marcaram sua trajetória.</p>
+        <div class="catalogo-trilho" id="trilho-mbj" aria-label="Filmes e séries de Michael B. Jordan"></div>
+      </section>
     </div>
   </main>
 
-  <script src="js/dados.js"></script>
-  <script src="js/principal.js"></script>
+  <footer id="rodape">
+    <div id="container-padrao">
+      <p id="texto-creditos">Atividade em dupla: Hyago e Gabriel</p>
+    </div>
+  </footer>
+
+  <div class="catalogo-modal" id="modal-catalogo" hidden>
+    <div class="catalogo-modal-painel" role="dialog" aria-modal="true" aria-labelledby="modal-titulo">
+      <button class="catalogo-modal-fechar" type="button" aria-label="Fechar detalhes">×</button>
+      <img class="catalogo-modal-foto" id="modal-foto" alt="">
+      <div class="catalogo-modal-corpo">
+        <p class="catalogo-modal-titulo" id="modal-titulo" role="heading" aria-level="2"></p>
+        <p class="catalogo-modal-meta" id="modal-meta"></p>
+        <p id="modal-texto"></p>
+        <button class="catalogo-btn" id="modal-botao-fechar" type="button">Fechar</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/catalogo.js"></script>
+   
 </body>
 </html>
