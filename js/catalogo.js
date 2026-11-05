@@ -14,7 +14,7 @@
       {
         titulo: "Recorde pela Inglaterra",
         meta: "2023 · Seleção inglesa",
-        imagem: "file/img/kane/kane3.jpg",
+        imagem: "file/img/kane/kane_2.jpg",
         texto: "Ao marcar contra a Itália, Kane superou Wayne Rooney e tornou-se o maior artilheiro da história da seleção inglesa."
       },
       {
@@ -26,7 +26,7 @@
       {
         titulo: "Campeão alemão",
         meta: "2024/25 · Bundesliga",
-        imagem: "file/img/kane/harry_kane.jpg",
+        imagem: "file/img/kane/kane3.jpg",
         texto: "Kane conquistou a Bundesliga com o Bayern de Munique na temporada 2024/25, seu primeiro título de liga nacional."
       }
     ];
